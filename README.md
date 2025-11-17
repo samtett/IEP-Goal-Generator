@@ -332,13 +332,14 @@ For issues or questions:
 
 This project is for educational purposes. Use responsibly and in compliance with all applicable laws and regulations.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Bureau of Labor Statistics for occupation data
 - OpenAI for language model API
+- Groq for language model API
 - Iowa Department of Education for standards framework
 - Special education professionals who inspired this project
-
+  
 ---
 
 **Version**: 1.0.0  
