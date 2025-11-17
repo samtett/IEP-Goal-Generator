@@ -343,4 +343,6 @@ This project is for educational purposes. Use responsibly and in compliance with
 
 **Version**: 1.0.0  
 **Last Updated**: 2025  
-**Author**: RAG IEP Project Team
+**Author**: Samuel Terkper Kwasi Tetteh
+
+
