@@ -30,6 +30,7 @@ This system assists special education professionals in creating comprehensive, m
 ### 1. Clone or Download the Project
 
 ```bash
+https://github.com/samtett/IEP-Goal-Generator.git
 cd /path/to/NLP
 ```
 
