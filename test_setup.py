@@ -13,61 +13,61 @@ def test_imports():
     
     try:
         import requests
-        print("✓ requests")
+        print("requests")
     except ImportError:
         print("✗ requests - run: pip install requests")
         return False
     
     try:
         from bs4 import BeautifulSoup
-        print("✓ beautifulsoup4")
+        print("beautifulsoup4")
     except ImportError:
-        print("✗ beautifulsoup4 - run: pip install beautifulsoup4")
+        print("beautifulsoup4 - run: pip install beautifulsoup4")
         return False
     
     try:
         from sentence_transformers import SentenceTransformer
-        print("✓ sentence-transformers")
+        print("sentence-transformers")
     except ImportError:
-        print("✗ sentence-transformers - run: pip install sentence-transformers")
+        print("sentence-transformers - run: pip install sentence-transformers")
         return False
     
     try:
         import faiss
-        print("✓ faiss-cpu")
+        print("faiss-cpu")
     except ImportError:
-        print("✗ faiss-cpu - run: pip install faiss-cpu")
+        print("faiss-cpu - run: pip install faiss-cpu")
         return False
     
     try:
         import numpy as np
-        print("✓ numpy")
+        print("numpy")
     except ImportError:
-        print("✗ numpy - run: pip install numpy")
+        print("numpy - run: pip install numpy")
         return False
     
     try:
         import streamlit
-        print("✓ streamlit")
+        print("streamlit")
     except ImportError:
-        print("✗ streamlit - run: pip install streamlit")
+        print("streamlit - run: pip install streamlit")
         return False
     
     try:
         import openai
-        print("✓ openai")
+        print("openai")
     except ImportError:
-        print("✗ openai - run: pip install openai")
+        print("openai - run: pip install openai")
         return False
     
     try:
         from dotenv import load_dotenv
-        print("✓ python-dotenv")
+        print("python-dotenv")
     except ImportError:
         print("✗ python-dotenv - run: pip install python-dotenv")
         return False
     
-    print("\n✅ All required packages are installed!\n")
+    print("\nAll required packages are installed!\n")
     return True
 
 
@@ -81,17 +81,17 @@ def test_data_structure():
     
     for dir_name in required_dirs:
         if os.path.exists(dir_name):
-            print(f"✓ {dir_name}/ exists")
+            print(f" {dir_name}/ exists")
         else:
-            print(f"✗ {dir_name}/ missing")
+            print(f" {dir_name}/ missing")
             os.makedirs(dir_name, exist_ok=True)
             print(f"  Created {dir_name}/")
     
     for file_name in required_files:
         if os.path.exists(file_name):
-            print(f"✓ {file_name} exists")
+            print(f" {file_name} exists")
         else:
-            print(f"✗ {file_name} missing")
+            print(f" {file_name} missing")
     
     print()
 
@@ -106,7 +106,7 @@ def test_env_setup():
     api_key = os.getenv('OPENAI_API_KEY')
     
     if api_key and api_key != 'your_openai_api_key_here':
-        print("✓ OPENAI_API_KEY is set")
+        print(" OPENAI_API_KEY is set")
         print(f"  Key: {api_key[:8]}...{api_key[-4:]}")
     else:
         print("⚠ OPENAI_API_KEY not set or using placeholder")
@@ -126,18 +126,18 @@ def test_data_collection():
         loader = EducationalStandardsLoader()
         standards = loader.get_all_standards()
         
-        print(f"✓ Loaded {len(standards['iowa_standards'])} standard categories")
-        print(f"✓ Loaded {len(standards['idea_requirements'])} IDEA requirements")
+        print(f" Loaded {len(standards['iowa_standards'])} standard categories")
+        print(f" Loaded {len(standards['idea_requirements'])} IDEA requirements")
         
         # Test examples loading
         examples = IEPExamplesLoader.load_sample_goals()
-        print(f"✓ Loaded {len(examples)} sample IEP goals")
+        print(f" Loaded {len(examples)} sample IEP goals")
         
         print()
         return True
         
     except Exception as e:
-        print(f"✗ Error in data collection: {str(e)}")
+        print(f" Error in data collection: {str(e)}")
         return False
 
 
@@ -149,19 +149,19 @@ def test_embedding():
         from src.rag_pipeline import EmbeddingManager
         
         manager = EmbeddingManager()
-        print(f"✓ Loaded embedding model")
+        print(f" Loaded embedding model")
         print(f"  Dimension: {manager.embedding_dim}")
         
         # Test embedding
         test_text = "This is a test sentence for embedding."
         embedding = manager.embed_query(test_text)
-        print(f"✓ Generated test embedding: shape {embedding.shape}")
+        print(f" Generated test embedding: shape {embedding.shape}")
         
         print()
         return True
         
     except Exception as e:
-        print(f"✗ Error with embeddings: {str(e)}")
+        print(f" Error with embeddings: {str(e)}")
         print(f"  You may need to run: pip install sentence-transformers")
         return False
 
@@ -171,7 +171,7 @@ def check_existing_index():
     print("Checking for existing vector index...")
     
     if os.path.exists('data/iep_faiss.index') and os.path.exists('data/iep_metadata.pkl'):
-        print("✓ Vector index found")
+        print(" Vector index found")
         
         import pickle
         with open('data/iep_metadata.pkl', 'rb') as f:
@@ -179,7 +179,7 @@ def check_existing_index():
         print(f"  Contains {len(metadata)} document chunks")
         return True
     else:
-        print("⚠ Vector index not found")
+        print(" Vector index not found")
         print("  Run: python src/data_collection.py")
         print("  Then: python src/rag_pipeline.py")
         return False
@@ -196,7 +196,7 @@ def main():
     
     # Change to project directory if needed
     if not os.path.exists('app.py'):
-        print("⚠ Please run this script from the project root directory")
+        print(" Please run this script from the project root directory")
         print("  cd /path/to/NLP")
         return
     
@@ -216,13 +216,13 @@ def main():
     print("="*60)
     
     for test_name, passed in results:
-        status = "✅ PASSED" if passed else "❌ FAILED"
+        status = "PASSED" if passed else " FAILED"
         print(f"{test_name}: {status}")
     
     print()
     
     if all(passed for _, passed in results):
-        print("🎉 All tests passed! You're ready to run the application.")
+        print(" All tests passed! You're ready to run the application.")
         print()
         print("Next steps:")
         print("1. If you haven't already, collect data:")
@@ -234,7 +234,7 @@ def main():
         print("3. Run the application:")
         print("   streamlit run app.py")
     else:
-        print("⚠️ Some tests failed. Please review the errors above.")
+        print(" Some tests failed. Please review the errors above.")
         print()
         print("Common fixes:")
         print("- Install missing packages: pip install -r requirements.txt")

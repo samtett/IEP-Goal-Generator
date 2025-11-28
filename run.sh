@@ -10,7 +10,7 @@ echo ""
 # Check if Python is installed
 if ! command -v python3 &> /dev/null
 then
-    echo "❌ Python3 is not installed. Please install Python 3.8 or higher."
+    echo " Python3 is not installed. Please install Python 3.8 or higher."
     exit 1
 fi
 
@@ -19,7 +19,7 @@ echo ""
 
 # Check if we're in the right directory
 if [ ! -f "app.py" ]; then
-    echo "❌ Error: app.py not found. Please run this script from the project root directory."
+    echo " Error: app.py not found. Please run this script from the project root directory."
     exit 1
 fi
 
@@ -68,7 +68,7 @@ case $choice in
         python3 src/rag_pipeline.py
         
         echo ""
-        echo "✅ Setup complete!"
+        echo " Setup complete!"
         echo ""
         read -p "Would you like to run the application now? (y/n): " run_app
         if [ "$run_app" = "y" ] || [ "$run_app" = "Y" ]; then
@@ -83,7 +83,7 @@ case $choice in
         echo "Installing dependencies..."
         pip3 install -r requirements.txt
         echo ""
-        echo "✅ Dependencies installed!"
+        echo " Dependencies installed!"
         ;;
         
     3)
@@ -94,7 +94,7 @@ case $choice in
         echo "Building vector index..."
         python3 src/rag_pipeline.py
         echo ""
-        echo "✅ Data collection complete!"
+        echo " Data collection complete!"
         ;;
         
     4)
@@ -105,7 +105,7 @@ case $choice in
             echo ""
             streamlit run app.py
         else
-            echo "❌ Data not found. Please run data collection first (option 3)."
+            echo " Data not found. Please run data collection first (option 3)."
             echo ""
             read -p "Would you like to collect data now? (y/n): " collect
             if [ "$collect" = "y" ] || [ "$collect" = "Y" ]; then

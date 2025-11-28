@@ -30,6 +30,7 @@ This system assists special education professionals in creating comprehensive, m
 ### 1. Clone or Download the Project
 
 ```bash
+https://github.com/samtett/IEP-Goal-Generator.git
 cd /path/to/NLP
 ```
 
@@ -332,15 +333,18 @@ For issues or questions:
 
 This project is for educational purposes. Use responsibly and in compliance with all applicable laws and regulations.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Bureau of Labor Statistics for occupation data
 - OpenAI for language model API
+- Groq for language model API
 - Iowa Department of Education for standards framework
 - Special education professionals who inspired this project
-
+  
 ---
 
 **Version**: 1.0.0  
 **Last Updated**: 2025  
-**Author**: RAG IEP Project Team
+**Author**: Samuel Terkper Kwasi Tetteh
+
+

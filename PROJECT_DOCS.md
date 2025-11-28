@@ -423,4 +423,4 @@ Total: ~1,255 lines of production code
 
 **Document Version**: 1.0  
 **Last Updated**: 2025  
-**Authors**: RAG IEP Project Team
+**Authors**: Samuel Terkper Kwasi Tetteh

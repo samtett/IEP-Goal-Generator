@@ -320,35 +320,35 @@ Generate:
 BEST FREE OPTIONS:
 
 1. **Ollama** (RECOMMENDED FOR STUDENTS/PRIVACY)
-   ✅ Completely FREE
-   ✅ Runs locally (100% private)
-   ✅ No API key needed
-   ✅ Good quality with llama3
-   ❌ Requires ~4-8GB VRAM
-   ❌ Slower on CPU
+    Completely FREE
+    Runs locally (100% private)
+    No API key needed
+    Good quality with llama3
+    Requires ~4-8GB VRAM
+    Slower on CPU
 
 2. **Groq**
-   ✅ FREE API
-   ✅ Very fast inference
-   ✅ Good model quality (Llama 3 70B)
-   ✅ Easy to use
-   ❌ Requires internet
-   ❌ Rate limits on free tier
+    FREE API
+    Very fast inference
+    Good model quality (Llama 3 70B)
+    Easy to use
+    Requires internet
+    Rate limits on free tier
 
 3. **Hugging Face Inference API**
-   ✅ FREE tier available
-   ✅ Many models to choose from
-   ✅ Can run locally too
-   ❌ Free tier has limits
-   ❌ May be slower
+    FREE tier available
+    Many models to choose from
+    Can run locally too
+    Free tier has limits
+    May be slower
 
 PAID BUT CHEAPER THAN OPENAI:
 
 4. **Anthropic Claude**
-   ✅ Often better quality than GPT-4
-   ✅ Cheaper than OpenAI for some models
-   ✅ Better at long contexts
-   ❌ Still requires payment
+    Often better quality than GPT-4
+    Cheaper than OpenAI for some models
+    Better at long contexts
+    Still requires payment
 
 RECOMMENDED APPROACH:
 - For development/testing: Use Ollama (free, local)
