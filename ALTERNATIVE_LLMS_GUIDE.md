@@ -1,9 +1,5 @@
 # Alternative LLM Options - Quick Guide
 
-## The OpenAI Issue is NOW FIXED!
-
-The code has been updated to use the new OpenAI v1.0+ API syntax. Just restart your Streamlit app and it will work.
-
 ## FREE Alternatives to OpenAI
 
 ### Option 1: Ollama (BEST FOR STUDENTS - 100% FREE & LOCAL)
@@ -204,4 +200,4 @@ ollama pull llama3
 ollama run llama3 "Write an IEP goal for a student interested in retail"
 ```
 
-That's it! No credit card, no API key, no limits! 🎉
+That's it! No credit card, no API key, no limits! 
