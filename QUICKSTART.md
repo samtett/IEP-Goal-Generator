@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-## 🚀 Fast Setup (5 minutes)
+##  Fast Setup (5 minutes)
 
 ### Step 1: Install Dependencies (1 min)
 
@@ -56,7 +56,7 @@ Opens in browser at http://localhost:8501
 
 ---
 
-## ✨ Using the App (First Time)
+## Using the App (First Time)
 
 1. **Check "Use Sample Data (Clarence)"** in sidebar
    - This loads the example student profile
@@ -74,7 +74,7 @@ Opens in browser at http://localhost:8501
 
 ---
 
-## 📋 Sample Student Profile
+##  Sample Student Profile
 
 The app includes a ready-to-use example:
 
@@ -92,7 +92,7 @@ Expected output includes:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### "Import could not be resolved" errors
 ```bash
@@ -117,7 +117,7 @@ conda install -c pytorch faiss-cpu
 
 ---
 
-## 💡 Tips
+## Tips
 
 - **First generation**: Use sample data to test
 - **Best quality**: Use GPT-4 (more expensive but better)
@@ -127,7 +127,7 @@ conda install -c pytorch faiss-cpu
 
 ---
 
-## 📊 What It Does
+##  What It Does
 
 1. **Retrieves** relevant career info from BLS database
 2. **Finds** matching educational standards
@@ -137,7 +137,7 @@ conda install -c pytorch faiss-cpu
 
 ---
 
-## 🎯 Next Steps
+##  Next Steps
 
 After your first successful generation:
 
@@ -149,7 +149,7 @@ After your first successful generation:
 
 ---
 
-## 📞 Need Help?
+##  Need Help?
 
 1. Run `python test_setup.py` to diagnose issues
 2. Check README.md for detailed documentation
@@ -158,4 +158,4 @@ After your first successful generation:
 
 ---
 
-**Ready to go?** Run: `streamlit run app.py` 🚀
+**Ready to go?** Run: `streamlit run app.py` 

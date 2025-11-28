@@ -200,17 +200,17 @@ Task: Generate measurable, compliant goals
 **Test Case: Clarence (15yo, interested in retail)**
 
 Generated Output Quality:
-- ✅ Postsecondary employment goal: Specific, measurable, realistic
-- ✅ Postsecondary training goal: Appropriate for occupation
-- ✅ Annual objective: Measurable criteria, timeline, skills-focused
-- ✅ Short-term objectives: Progressive, building toward annual goal
-- ✅ Standards alignment: Explicit citations, clear connections
+-  Postsecondary employment goal: Specific, measurable, realistic
+-  Postsecondary training goal: Appropriate for occupation
+-  Annual objective: Measurable criteria, timeline, skills-focused
+-  Short-term objectives: Progressive, building toward annual goal
+-  Standards alignment: Explicit citations, clear connections
 
 **IDEA 2004 Compliance:**
-- ✅ Measurable postsecondary goals
-- ✅ Based on age-appropriate assessments
-- ✅ Reflects student interests
-- ✅ Includes necessary services/courses
+-  Measurable postsecondary goals
+-  Based on age-appropriate assessments
+-  Reflects student interests
+-  Includes necessary services/courses
 
 **Strengths:**
 1. Consistent structure across generations
@@ -358,10 +358,10 @@ Generated Output Quality:
 
 This project successfully demonstrates a production-ready RAG system for IEP goal generation that:
 
-✅ **Works**: Generates high-quality, compliant goals  
-✅ **Scales**: Handles various student profiles and interests  
-✅ **Educates**: Provides transparency through context and alignment  
-✅ **Saves Time**: Automates time-consuming research and writing  
+ **Works**: Generates high-quality, compliant goals  
+ **Scales**: Handles various student profiles and interests  
+ **Educates**: Provides transparency through context and alignment  
+ **Saves Time**: Automates time-consuming research and writing  
 
 The system could genuinely help special education professionals create better IEP goals more efficiently, while maintaining the required legal compliance and educational quality.
 

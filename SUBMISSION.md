@@ -1,6 +1,6 @@
 # IEP RAG System - Project Summary
 
-## 📋 Project Overview
+## Project Overview
 
 **Title:** RAG System for IEP Transition Goal Generation  
 **Purpose:** Assist special education professionals in creating IDEA-compliant IEP transition goals  
@@ -8,7 +8,7 @@
 
 ---
 
-## ✅ Deliverables Completed
+## Deliverables Completed
 
 ### 1. Code Repository ✓
 - **Complete source code** with modular architecture
@@ -66,7 +66,7 @@ All required components implemented and working:
 
 ---
 
-## 🎯 Requirements Met
+## Requirements Met
 
 ### Data Sources ✓
 - [x] Occupational Outlook Handbook (BLS)
@@ -102,7 +102,7 @@ All required components implemented and working:
 
 ---
 
-## 🏆 Key Features
+## Key Features
 
 ### Technical Excellence
 1. **Modular Architecture**: Clean separation of concerns
@@ -127,7 +127,7 @@ All required components implemented and working:
 
 ---
 
-## 📊 Technical Specifications
+## Technical Specifications
 
 | Component | Implementation |
 |-----------|----------------|
@@ -141,7 +141,7 @@ All required components implemented and working:
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 **Input:**
 - Student: Clarence, 15yo, Grade 10
@@ -161,7 +161,7 @@ All required components implemented and working:
 
 ---
 
-## 💪 Strengths
+## Strengths
 
 1. **Complete Implementation**: All requirements fully met
 2. **Production Quality**: Clean, documented, tested code
@@ -173,7 +173,7 @@ All required components implemented and working:
 
 ---
 
-## 🔄 Potential Improvements
+## Potential Improvements
 
 1. **Expand Coverage**: More occupations and state standards
 2. **Compliance Checking**: Automated IDEA validation
@@ -184,7 +184,7 @@ All required components implemented and working:
 
 ---
 
-## 📂 File Structure Summary
+## File Structure Summary
 
 ```
 NLP/
@@ -207,7 +207,7 @@ NLP/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Quick Start (5 minutes)
 
@@ -244,7 +244,7 @@ streamlit run app.py
 
 ---
 
-## 🎓 Learning Outcomes Demonstrated
+## Learning Outcomes Demonstrated
 
 1. **RAG Architecture**: Complete retrieval-augmented generation pipeline
 2. **Web Scraping**: Ethical data collection from BLS
@@ -259,19 +259,19 @@ streamlit run app.py
 
 ---
 
-## 📈 Evaluation Results
+## Evaluation Results
 
-**Functionality**: ⭐⭐⭐⭐⭐
+**Functionality**: 
 - System works as expected
 - Generates appropriate goals
 - Handles various student profiles
 
-**Technical Implementation**: ⭐⭐⭐⭐⭐
+**Technical Implementation**: 
 - Clean, modular code
 - Effective RAG pipeline
 - Well-engineered prompts
 
-**Documentation**: ⭐⭐⭐⭐⭐
+**Documentation**: 
 - Comprehensive README
 - Quick start guide
 - Technical documentation
@@ -279,7 +279,7 @@ streamlit run app.py
 
 ---
 
-## 🎬 Demo Video Script (2 minutes)
+## Demo Video Script (2 minutes)
 
 **[0:00-0:15] Introduction**
 "This is the IEP RAG System, which helps special education teachers create transition goals."
@@ -305,7 +305,7 @@ streamlit run app.py
 
 ---
 
-## ✉️ Contact & Submission
+## Contact & Submission
 
 **Repository**: `/home/samtett/Documents/NLP`  
 **Key Files**: All source code, documentation, and data scripts included  

@@ -396,4 +396,4 @@ COMBINE & DEDUPLICATE
 
 ---
 
-**These diagrams provide a visual representation of the system architecture, data flow, and component interactions.**
+**These diagrams provide a visual representation of the system architecture, data flow, and component interactions.

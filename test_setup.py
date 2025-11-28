@@ -15,7 +15,7 @@ def test_imports():
         import requests
         print("requests")
     except ImportError:
-        print("✗ requests - run: pip install requests")
+        print("requests - run: pip install requests")
         return False
     
     try:
@@ -64,10 +64,10 @@ def test_imports():
         from dotenv import load_dotenv
         print("python-dotenv")
     except ImportError:
-        print("✗ python-dotenv - run: pip install python-dotenv")
+        print("python-dotenv - run: pip install python-dotenv")
         return False
     
-    print("\nAll required packages are installed!\n")
+    print("\n All required packages are installed!\n")
     return True
 
 
@@ -109,7 +109,7 @@ def test_env_setup():
         print(" OPENAI_API_KEY is set")
         print(f"  Key: {api_key[:8]}...{api_key[-4:]}")
     else:
-        print("⚠ OPENAI_API_KEY not set or using placeholder")
+        print(" OPENAI_API_KEY not set or using placeholder")
         print("  You'll need to set this in .env or provide it in the UI")
     
     print()
@@ -126,18 +126,18 @@ def test_data_collection():
         loader = EducationalStandardsLoader()
         standards = loader.get_all_standards()
         
-        print(f" Loaded {len(standards['iowa_standards'])} standard categories")
-        print(f" Loaded {len(standards['idea_requirements'])} IDEA requirements")
+        print(f"Loaded {len(standards['iowa_standards'])} standard categories")
+        print(f"Loaded {len(standards['idea_requirements'])} IDEA requirements")
         
         # Test examples loading
         examples = IEPExamplesLoader.load_sample_goals()
-        print(f" Loaded {len(examples)} sample IEP goals")
+        print(f"Loaded {len(examples)} sample IEP goals")
         
         print()
         return True
         
     except Exception as e:
-        print(f" Error in data collection: {str(e)}")
+        print(f"✗ Error in data collection: {str(e)}")
         return False
 
 
@@ -149,20 +149,20 @@ def test_embedding():
         from src.rag_pipeline import EmbeddingManager
         
         manager = EmbeddingManager()
-        print(f" Loaded embedding model")
-        print(f"  Dimension: {manager.embedding_dim}")
+        print(f"Loaded embedding model")
+        print(f"Dimension: {manager.embedding_dim}")
         
         # Test embedding
         test_text = "This is a test sentence for embedding."
         embedding = manager.embed_query(test_text)
-        print(f" Generated test embedding: shape {embedding.shape}")
+        print(f"Generated test embedding: shape {embedding.shape}")
         
         print()
         return True
         
     except Exception as e:
-        print(f" Error with embeddings: {str(e)}")
-        print(f"  You may need to run: pip install sentence-transformers")
+        print(f"Error with embeddings: {str(e)}")
+        print(f"You may need to run: pip install sentence-transformers")
         return False
 
 
@@ -171,7 +171,7 @@ def check_existing_index():
     print("Checking for existing vector index...")
     
     if os.path.exists('data/iep_faiss.index') and os.path.exists('data/iep_metadata.pkl'):
-        print(" Vector index found")
+        print("✓ Vector index found")
         
         import pickle
         with open('data/iep_metadata.pkl', 'rb') as f:
@@ -179,9 +179,9 @@ def check_existing_index():
         print(f"  Contains {len(metadata)} document chunks")
         return True
     else:
-        print(" Vector index not found")
-        print("  Run: python src/data_collection.py")
-        print("  Then: python src/rag_pipeline.py")
+        print("Vector index not found")
+        print("Run: python src/data_collection.py")
+        print("Then: python src/rag_pipeline.py")
         return False
     
     print()
@@ -196,7 +196,7 @@ def main():
     
     # Change to project directory if needed
     if not os.path.exists('app.py'):
-        print(" Please run this script from the project root directory")
+        print("Please run this script from the project root directory")
         print("  cd /path/to/NLP")
         return
     
@@ -216,13 +216,13 @@ def main():
     print("="*60)
     
     for test_name, passed in results:
-        status = "PASSED" if passed else " FAILED"
+        status = " PASSED" if passed else " FAILED"
         print(f"{test_name}: {status}")
     
     print()
     
     if all(passed for _, passed in results):
-        print(" All tests passed! You're ready to run the application.")
+        print("All tests passed! You're ready to run the application.")
         print()
         print("Next steps:")
         print("1. If you haven't already, collect data:")
@@ -234,7 +234,7 @@ def main():
         print("3. Run the application:")
         print("   streamlit run app.py")
     else:
-        print(" Some tests failed. Please review the errors above.")
+        print("Some tests failed. Please review the errors above.")
         print()
         print("Common fixes:")
         print("- Install missing packages: pip install -r requirements.txt")

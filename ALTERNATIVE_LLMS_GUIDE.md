@@ -1,18 +1,18 @@
 # Alternative LLM Options - Quick Guide
 
-## ✅ The OpenAI Issue is NOW FIXED!
+## The OpenAI Issue is NOW FIXED!
 
 The code has been updated to use the new OpenAI v1.0+ API syntax. Just restart your Streamlit app and it will work.
 
-## 🆓 FREE Alternatives to OpenAI
+## FREE Alternatives to OpenAI
 
 ### Option 1: Ollama (BEST FOR STUDENTS - 100% FREE & LOCAL)
 
 **Why Choose This:**
-- ✅ Completely FREE forever
-- ✅ Runs on your computer (no internet needed)
-- ✅ 100% private (data never leaves your machine)
-- ✅ Good quality with Llama 3 models
+-  Completely FREE forever
+-  Runs on your computer (no internet needed)
+-  100% private (data never leaves your machine)
+-  Good quality with Llama 3 models
 
 **Setup (5 minutes):**
 ```bash
@@ -43,10 +43,10 @@ print(result['goals'])
 ### Option 2: Groq (FREE Cloud API - VERY FAST)
 
 **Why Choose This:**
-- ✅ FREE API with generous limits
-- ✅ Extremely fast (faster than OpenAI!)
-- ✅ Access to Llama 3 70B
-- ✅ No credit card required
+-  FREE API with generous limits
+-  Extremely fast (faster than OpenAI!)
+-  Access to Llama 3 70B
+-  No credit card required
 
 **Setup (2 minutes):**
 ```bash
@@ -71,9 +71,9 @@ result = generator.generate_goals(student_info, context)
 ### Option 3: Hugging Face (FREE with limits)
 
 **Why Choose This:**
-- ✅ FREE tier available
-- ✅ Many models to choose from
-- ✅ Can run locally or in cloud
+-  FREE tier available
+-  Many models to choose from
+-  Can run locally or in cloud
 
 **Setup:**
 ```bash
@@ -100,7 +100,7 @@ generator = HuggingFaceGenerator(use_local=True)
 result = generator.generate_goals(student_info, context)
 ```
 
-## 💰 Paid Alternatives (Cheaper than OpenAI)
+## Paid Alternatives (Cheaper than OpenAI)
 
 ### Option 4: Anthropic Claude
 
@@ -124,7 +124,7 @@ generator = ClaudeGenerator(model='claude-3-haiku-20240307')  # Cheapest!
 result = generator.generate_goals(student_info, context)
 ```
 
-## 🎯 Recommendations
+## Recommendations
 
 **For this project (student/learning):**
 1. **Best choice: Ollama** - Free, private, no API needed
@@ -135,7 +135,7 @@ result = generator.generate_goals(student_info, context)
 2. **Best quality: Claude Opus** - Better than GPT-4, cheaper
 3. **Cheapest paid: Claude Haiku** - $0.25 per 1M tokens
 
-## 📊 Quick Comparison
+## Quick Comparison
 
 | Option | Cost | Speed | Quality | Privacy | Setup |
 |--------|------|-------|---------|---------|-------|
@@ -147,7 +147,7 @@ result = generator.generate_goals(student_info, context)
 
 *Free tier has limits
 
-## 🚀 Quick Start with Ollama (RECOMMENDED)
+## Quick Start with Ollama (RECOMMENDED)
 
 ```bash
 # Install Ollama
@@ -171,7 +171,7 @@ print(result['goals'])
 "
 ```
 
-## 🔄 Switching from OpenAI to Ollama in the App
+## Switching from OpenAI to Ollama in the App
 
 The main code is fixed for OpenAI, but to use Ollama in the Streamlit app, you'd need to:
 
@@ -181,7 +181,7 @@ The main code is fixed for OpenAI, but to use Ollama in the Streamlit app, you'd
 
 Or just keep OpenAI and add your API key - it's now working correctly! The error was just the old API syntax, which is now fixed.
 
-## 💡 My Recommendation
+## My Recommendation
 
 Since you're a student working on a project:
 

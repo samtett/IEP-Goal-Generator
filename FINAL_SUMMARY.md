@@ -13,7 +13,7 @@ A professional-grade architecture diagram for the IEP Goal Generator system usin
 ### 1. Source Code
 - **File**: `generate_architecture.py`
 - **Lines**: 495 (well-documented, clean)
-- **Status**: Production-ready 
+- **Status**: Production-ready
 
 ### 2. Output Files
 - **rag_architecture.png** (718 KB)

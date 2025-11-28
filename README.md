@@ -2,7 +2,7 @@
 
 A Retrieval-Augmented Generation (RAG) system for generating IDEA-compliant IEP transition goals for students with disabilities, aligned with industry standards and educational frameworks.
 
-## 🎯 Overview
+## Overview
 
 This system assists special education professionals in creating comprehensive, measurable IEP transition goals by:
 - Retrieving relevant career information from the Bureau of Labor Statistics Occupational Outlook Handbook
@@ -10,7 +10,7 @@ This system assists special education professionals in creating comprehensive, m
 - Generating legally compliant postsecondary goals and objectives
 - Providing evidence-based alignment with industry requirements
 
-## ✨ Features
+## Features
 
 - **Smart Retrieval**: RAG pipeline using FAISS vector search and sentence transformers
 - **Standards Alignment**: Automatic alignment with Iowa 21st Century Skills and IDEA 2004 requirements
@@ -19,13 +19,13 @@ This system assists special education professionals in creating comprehensive, m
 - **Customizable**: Adjustable generation parameters and refinement options
 - **Export Ready**: Download generated goals in text format
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.8+
 - OpenAI API key (for GPT-4 or GPT-3.5-turbo)
 - Internet connection (for initial data collection)
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Clone or Download the Project
 
@@ -62,7 +62,7 @@ OPENAI_API_KEY=your_api_key_here
 OPENAI_MODEL=gpt-4
 ```
 
-## 📊 Data Collection & Setup
+##  Data Collection & Setup
 
 ### Step 1: Collect Data
 
@@ -93,7 +93,7 @@ This will:
 - Build FAISS index for semantic search
 - Save index to `data/iep_faiss.index` and metadata to `data/iep_metadata.pkl`
 
-## 🎮 Usage
+##  Usage
 
 ### Running the Application
 
@@ -153,7 +153,7 @@ The system includes a pre-loaded example:
 - 3-4 short-term objectives with measurable criteria
 - Alignment with BLS standards and 21st Century Skills
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 NLP/
@@ -177,7 +177,7 @@ NLP/
 └── rag_iep_project_template.ipynb  # Original Jupyter notebook
 ```
 
-## 🔧 Technical Implementation
+##  Technical Implementation
 
 ### Data Collection & Preprocessing
 
@@ -238,23 +238,23 @@ NLP/
 - Session state for refinement workflow
 - Download functionality
 
-## 📈 Evaluation & Results
+##  Evaluation & Results
 
 ### Strengths
 
-✅ **Accuracy**: Generates IDEA-compliant, measurable goals  
-✅ **Alignment**: Successfully connects to relevant standards and occupation requirements  
-✅ **Usability**: Intuitive interface for educators without technical expertise  
-✅ **Flexibility**: Supports various career interests and student profiles  
-✅ **Evidence-Based**: Grounded in current occupation data and best practices  
+ **Accuracy**: Generates IDEA-compliant, measurable goals  
+ **Alignment**: Successfully connects to relevant standards and occupation requirements  
+ **Usability**: Intuitive interface for educators without technical expertise  
+ **Flexibility**: Supports various career interests and student profiles  
+ **Evidence-Based**: Grounded in current occupation data and best practices  
 
 ### Limitations
 
-⚠️ **API Dependency**: Requires OpenAI API (cost per generation)  
-⚠️ **Coverage**: Limited to 8 occupation categories (expandable)  
-⚠️ **Standards Scope**: Currently Iowa-focused (can add other states)  
-⚠️ **Validation**: No automated compliance checking  
-⚠️ **Personalization**: May need refinement for complex cases  
+ **API Dependency**: Requires OpenAI API (cost per generation)  
+ **Coverage**: Limited to 8 occupation categories (expandable)  
+ **Standards Scope**: Currently Iowa-focused (can add other states)  
+ **Validation**: No automated compliance checking  
+ **Personalization**: May need refinement for complex cases  
 
 ### Potential Improvements
 
@@ -269,7 +269,7 @@ NLP/
 9. **Progress Monitoring**: Link to data collection tools
 10. **Collaboration**: Multi-user support with teacher comments
 
-## 🧪 Testing
+##  Testing
 
 ### Manual Testing
 
@@ -289,7 +289,7 @@ pytest tests/
 pytest tests/integration/
 ```
 
-## 📚 Resources
+##  Resources
 
 - **BLS Occupational Outlook Handbook**: https://www.bls.gov/ooh/
 - **Iowa 21st Century Skills**: https://educate.iowa.gov/
@@ -297,7 +297,7 @@ pytest tests/integration/
 - **LangChain Documentation**: https://python.langchain.com/
 - **Sentence Transformers**: https://www.sbert.net/
 
-## 🤝 Contributing
+##  Contributing
 
 This is an educational project. Suggestions for improvement:
 
@@ -306,7 +306,7 @@ This is an educational project. Suggestions for improvement:
 3. Make your changes
 4. Submit a pull request
 
-## ⚖️ Legal & Compliance
+##  Legal & Compliance
 
 **Important Notes:**
 - This tool assists in goal creation but does not replace professional judgment
@@ -320,7 +320,7 @@ This is an educational project. Suggestions for improvement:
 - Aligned with student strengths, preferences, and interests
 - Include necessary transition services
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check the documentation above
@@ -329,7 +329,7 @@ For issues or questions:
 4. Verify API key is valid
 5. Check that data collection and indexing completed successfully
 
-## 📄 License
+##  License
 
 This project is for educational purposes. Use responsibly and in compliance with all applicable laws and regulations.
 

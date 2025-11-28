@@ -1,8 +1,8 @@
 # IEP RAG System - Complete File Index
 
-## 📋 Project Files Overview
+##  Project Files Overview
 
-### 🎯 Core Application Files
+###  Core Application Files
 
 | File | Lines | Purpose |
 |------|-------|---------|
@@ -15,7 +15,7 @@
 
 ---
 
-### 📚 Documentation Files
+###  Documentation Files
 
 | File | Lines | Purpose |
 |------|-------|---------|
@@ -29,7 +29,7 @@
 
 ---
 
-### 🔧 Setup & Configuration Files
+###  Setup & Configuration Files
 
 | File | Purpose |
 |------|---------|
@@ -41,12 +41,12 @@
 
 ---
 
-### 📁 Directory Structure
+###  Directory Structure
 
 ```
 NLP/
 │
-├── 📄 Core Application
+├── Core Application
 │   ├── app.py                      # Streamlit web interface
 │   ├── src/
 │   │   ├── data_collection.py     # Data gathering & processing
@@ -54,7 +54,7 @@ NLP/
 │   │   └── goal_generator.py      # LLM integration
 │   └── requirements.txt           # Dependencies
 │
-├── 📚 Documentation
+├── Documentation
 │   ├── README.md                  # Main documentation
 │   ├── QUICKSTART.md             # Quick start guide
 │   ├── PROJECT_DOCS.md           # Technical documentation
@@ -62,13 +62,13 @@ NLP/
 │   ├── ARCHITECTURE.md           # System diagrams
 │   └── FILE_INDEX.md             # This file
 │
-├── 🔧 Setup & Testing
+├── Setup & Testing
 │   ├── .env.example              # Environment template
 │   ├── .gitignore                # Git ignore
 │   ├── run.sh                    # Setup automation
 │   └── test_setup.py             # Installation tests
 │
-├── 💾 Data (Generated at Runtime)
+├── Data (Generated at Runtime)
 │   ├── data/
 │   │   ├── knowledge_base.pkl     # Combined knowledge base
 │   │   ├── iep_faiss.index       # Vector index
@@ -81,13 +81,13 @@ NLP/
 │   ├── iep_faiss.index           # Legacy location (root)
 │   └── iep_metadata.pkl          # Legacy location (root)
 │
-└── 📓 Original Notebook
+└── Original Notebook
     └── rag_iep_project_template.ipynb  # Initial development
 ```
 
 ---
 
-## 🎯 Quick Reference
+## Quick Reference
 
 ### To Run the Application
 
@@ -116,7 +116,7 @@ streamlit run app.py
 
 ---
 
-## 📊 File Statistics
+## File Statistics
 
 | Category | Files | Total Lines |
 |----------|-------|-------------|
@@ -128,7 +128,7 @@ streamlit run app.py
 
 ---
 
-## 🔑 Key Components Breakdown
+## Key Components Breakdown
 
 ### app.py (348 lines)
 - Streamlit UI configuration
@@ -192,7 +192,7 @@ streamlit run app.py
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ### Required Packages (requirements.txt)
 ```
@@ -214,7 +214,7 @@ pypdf==3.17.4                   # PDF processing
 
 ---
 
-## 🎓 Educational Value
+## Educational Value
 
 ### Demonstrates Skills In:
 
@@ -251,7 +251,7 @@ pypdf==3.17.4                   # PDF processing
 
 ---
 
-## ✅ Completeness Checklist
+## Completeness Checklist
 
 ### Required Deliverables
 - [x] Complete source code
@@ -292,7 +292,7 @@ pypdf==3.17.4                   # PDF processing
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 **For First-Time Users:**
 1. Read `QUICKSTART.md` (5 minutes)
@@ -321,7 +321,7 @@ pypdf==3.17.4                   # PDF processing
 
 ---
 
-## 📞 Support Resources
+## Support Resources
 
 | Need Help With | Refer To |
 |----------------|----------|
@@ -334,7 +334,7 @@ pypdf==3.17.4                   # PDF processing
 
 ---
 
-## 🎯 Summary
+##  Summary
 
 This is a **complete, production-ready RAG system** with:
 - ✅ **1,255 lines** of production Python code
@@ -352,4 +352,4 @@ This is a **complete, production-ready RAG system** with:
 
 **Created**: 2025  
 **Project**: NLP Final - IEP RAG System  
-**Status**: ✅ Complete
+**Status**:  Complete
