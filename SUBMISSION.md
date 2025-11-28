@@ -307,7 +307,7 @@ streamlit run app.py
 
 ## Contact & Submission
 
-**Repository**: `/home/samtett/Documents/NLP`  
+  
 **Key Files**: All source code, documentation, and data scripts included  
 **Setup Time**: ~5 minutes with automated script  
 **Test Data**: Sample case (Clarence) built-in
